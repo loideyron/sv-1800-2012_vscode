@@ -2,15 +2,14 @@
     "sv_module": {
         "prefix": "sv_module",
         "body": [
-            "//  Module: $1",
-            "//",
+            "// Module: $1",
+            "// TODO: add description",
             "module ${1:$TM_FILENAME_BASE}",
-            "\t/*  package imports  */",
-            "\t#(",
-            "\t\t${2:<parameter_list>}",
-            "\t)(",
-            "\t\t${3:<port_list>}",
-            "\t);\n",
+            "#(",
+            "\t${2:/*TODO:parameter_list*/}",
+            ")(",
+            "\t${3:/*TODO:port_list*/}",
+            ");\n",
             "\t$0",
             "endmodule: $1\n"
         ],
@@ -19,15 +18,14 @@
     "sv_interface": {
         "prefix": "sv_interface",
         "body": [
-            "//  Interface: $1",
-            "//",
+            "// Interface: $1",
+            "// TODO: add description",
             "interface ${1:$TM_FILENAME_BASE}",
-            "\t/*  package imports  */",
-            "\t#(",
-            "\t\t${2:<parameter_list>}",
-            "\t)(",
-            "\t\t${3:<port_list>}",
-            "\t);\n",
+            "#(",
+            "\t${2:/*TODO:parameter_list*/}",
+            ")(",
+            "\t${3:/*TODO:port_list*/}",
+            ");\n",
             "\t$0",
             "endinterface: $1\n"
         ],
@@ -36,12 +34,12 @@
     "sv_package": {
         "prefix": "sv_package",
         "body": [
-            "//  Package: $1",
-            "//",
+            "// Package: $1",
+            "// TODO: add description",
             "package ${1:$TM_FILENAME_BASE};",
-            "\t//  Group: Typedefs",
+            "\t// Group: Typedefs",
             "\t$2\n",
-            "\t//  Group: Parameters",
+            "\t// Group: Parameters",
             "\t$3\n",
             "\t$0",
             "endpackage: $1\n"
@@ -51,13 +49,13 @@
     "sv_class": {
         "prefix": "sv_class",
         "body": [
-            "//  Class: $1",
-            "//",
+            "// Class: $1",
+            "// TODO: add description",
             "class ${1:$TM_FILENAME_BASE};",
-            "\t//  Group: Variables\n\n",
-            "\t//  Group: Constraints\n\n",
-            "\t//  Group: Functions\n",
-            "\t//  Constructor: new",
+            "\t// Group: Variables\n\n",
+            "\t// Group: Constraints\n\n",
+            "\t// Group: Functions\n",
+            "\t// Constructor: new",
             "\tfunction new(string name = \"$1\");",
             "\tendfunction: new",
             "\t$0\n",
@@ -68,10 +66,10 @@
     "sv_typedef": {
         "prefix": "sv_typedef",
         "body": [
-            "//  Typedef: $3",
-            "//  --- Prototype ---",
-            "//  typedef $1 $2$3",
-            "//  ---",
+            "// Typedef: $3",
+            "// --- Prototype ---",
+            "// typedef $1 $2$3",
+            "// ---",
             "typedef ${1:enum} ${2:#() }${3:<type_name>};",
             "$0"
         ],
@@ -84,17 +82,16 @@
             "`ifndef __${1:${TM_FILENAME/((\\w*)([\\.\\s])?)/${2:/upcase}${3:+_}/g}}",
             "`define __$1",
             "\n$0\n",
-            "`endif\n"
+            "`endif // __$1\n"
         ],
         "description": "Basic SystemVerilog guard ifndef-define-endif construct."
     },
 
-    //  Constraints
     "sv_extern_constraint": {
         "context": ["meta.class.systemverilog"],
         "prefix": "extern_constraint",
         "body": [
-            "//  Constraint: $1",
+            "// Constraint: $1",
             "extern constraint $1;\n$0"
         ],
         "description": "Constraint declaration stub."
@@ -115,11 +112,10 @@
         "description": "Constraint block template."
     },
 
-    //  Coverage
     "sv_covergroup": {
         "prefix": "sv_covergroup",
         "body": [
-            "//  Covergroup: cg_$1",
+            "// Covergroup: cg_$1",
             "//",
             "covergroup cg_${1:identifier} (${2:port_list}) ${3:@(coverage_event)};",
             "\t$0",
@@ -160,7 +156,7 @@
     "sv_coverpoint": {
         "prefix": "sv_coverpoint",
         "body": [
-            "//  Coverpoint: cp_$1",
+            "// Coverpoint: cp_$1",
             "cp_${1:cover_point_identifier}: coverpoint ${2:covered_expression} iff (${3:1}) {",
             "\t$0",
             "}\n"
@@ -196,7 +192,7 @@
     "sv_covercross": {
         "prefix": "sv_covercross",
         "body": [
-            "//  Cross: cx_$1",
+            "// Cross: cx_$1",
             "cx_${1:cross_identifier}: cross ${2:list_of_cross_items} iff (${3:1}) {",
             "\t$0",
             "}\n"
@@ -214,9 +210,8 @@
             "$0"
         ],
         "description": "Cross coverage option block template."
-    }
+    },
 
-    //  Separators
     "sv_separator_block": {
         "prefix": "sv_separator_block",
         "body": [
@@ -240,14 +235,14 @@
         "prefix": "sv_separator_half",
         "body": [
             "/*---  $0                            ---*/",
-            "/*------------------------------------*/\n",
+            "/*------------------------------------*/\n"
         ],
         "description": "Small 40 ch wide separator."
     },
     "sv_whitespace_guide": {
         "prefix": "sv_whitespace_guide",
         "body": [
-            "//  guide  0---4---8--12--16--20--24--28--32--36--40--44--48--52--56--60--"
+            "// guide  0---4---8--12--16--20--24--28--32--36--40--44--48--52--56--60--"
         ],
         "description": "A simple whitespace guide."
     }

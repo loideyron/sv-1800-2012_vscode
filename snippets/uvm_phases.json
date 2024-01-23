@@ -3,7 +3,6 @@
         "context": "meta.class.systemverilog",
         "prefix": "uvm_extern_phase_build",
         "body": [
-            "//  Function: build_phase",
             "extern function void build_phase(uvm_phase phase);\n$0"
         ],
         "description": "UVM build_phase stub"
@@ -12,7 +11,6 @@
         "context": "meta.class.systemverilog",
         "prefix": "uvm_extern_phase_connect",
         "body": [
-            "//  Function: connect_phase",
             "extern function void connect_phase(uvm_phase phase);\n$0"
         ],
         "description": "UVM connect_phase stub"
@@ -21,7 +19,6 @@
         "context": "meta.class.systemverilog",
         "prefix": "uvm_extern_phase_end_of_elaboration",
         "body": [
-            "//  Function: end_of_elaboration_phase",
             "extern function void end_of_elaboration_phase(uvm_phase phase);\n$0"
         ],
         "description": "UVM end_of_elaboration stub"
@@ -30,7 +27,6 @@
         "context": "meta.class.systemverilog",
         "prefix": "uvm_extern_phase_start_of_simulation",
         "body": [
-            "//  Function: start_of_simulation_phase",
             "extern function void start_of_simulation_phase(uvm_phase phase);\n$0"
         ],
         "description": "UVM start_of_simulation_phase stub"
@@ -39,7 +35,6 @@
         "context": "meta.class.systemverilog",
         "prefix": "uvm_extern_phase_run",
         "body": [
-            "//  Function: run_phase",
             "extern task run_phase(uvm_phase phase);\n$0"
         ],
         "description": "UVM run_phase stub"
@@ -48,7 +43,6 @@
         "context": "meta.class.systemverilog",
         "prefix": "uvm_extern_phase_pre_reset",
         "body": [
-            "//  Function: pre_reset_phase",
             "extern task pre_reset_phase(uvm_phase phase);\n$0"
         ],
         "description": "UVM pre_reset_phase stub"
@@ -57,7 +51,6 @@
         "context": "meta.class.systemverilog",
         "prefix": "uvm_extern_phase_reset",
         "body": [
-            "//  Function: reset_phase",
             "extern task reset_phase(uvm_phase phase);\n$0"
         ],
         "description": "UVM reset_phase stub"
@@ -66,7 +59,6 @@
         "context": "meta.class.systemverilog",
         "prefix": "uvm_extern_phase_post_reset",
         "body": [
-            "//  Function: post_reset_phase",
             "extern task post_reset_phase(uvm_phase phase);\n$0"
         ],
         "description": "UVM post_reset_phase stub"
@@ -75,7 +67,6 @@
         "context": "meta.class.systemverilog",
         "prefix": "uvm_extern_phase_pre_configure",
         "body": [
-            "//  Function: pre_configure_phase",
             "extern task pre_configure_phase(uvm_phase phase);\n$0"
         ],
         "description": "UVM pre_configure_phase stub"
@@ -84,7 +75,6 @@
         "context": "meta.class.systemverilog",
         "prefix": "uvm_extern_phase_configure",
         "body": [
-            "//  Function: configure_phase",
             "extern task configure_phase(uvm_phase phase);\n$0"
         ],
         "description": "UVM configure_phase stub"
@@ -93,7 +83,6 @@
         "context": "meta.class.systemverilog",
         "prefix": "uvm_extern_phase_post_configure",
         "body": [
-            "//  Function: post_configure_phase",
             "extern task post_configure_phase(uvm_phase phase);\n$0"
         ],
         "description": "UVM post_configure_phase stub"
@@ -102,7 +91,6 @@
         "context": "meta.class.systemverilog",
         "prefix": "uvm_extern_phase_pre_main",
         "body": [
-            "//  Function: pre_main_phase",
             "extern task pre_main_phase(uvm_phase phase);\n$0"
         ],
         "description": "UVM pre_main_phase stub"
@@ -111,7 +99,6 @@
         "context": "meta.class.systemverilog",
         "prefix": "uvm_extern_phase_main",
         "body": [
-            "//  Function: main_phase",
             "extern task main_phase(uvm_phase phase);\n$0"
         ],
         "description": "UVM main_phase stub"
@@ -120,7 +107,6 @@
         "context": "meta.class.systemverilog",
         "prefix": "uvm_extern_phase_post_main",
         "body": [
-            "//  Function: post_main_phase",
             "extern task post_main_phase(uvm_phase phase);\n$0"
         ],
         "description": "UVM post_main_phase stub"
@@ -129,7 +115,6 @@
         "context": "meta.class.systemverilog",
         "prefix": "uvm_extern_phase_pre_shutdown",
         "body": [
-            "//  Function: pre_shutdown_phase",
             "extern task pre_shutdown_phase(uvm_phase phase);\n$0"
         ],
         "description": "UVM pre_shutdown_phase stub"
@@ -138,7 +123,6 @@
         "context": "meta.class.systemverilog",
         "prefix": "uvm_extern_phase_shutdown",
         "body": [
-            "//  Function: shutdown_phase",
             "extern task shutdown_phase(uvm_phase phase);\n$0"
         ],
         "description": "UVM shutdown_phase stub"
@@ -147,7 +131,6 @@
         "context": "meta.class.systemverilog",
         "prefix": "uvm_extern_phase_post_shutdown",
         "body": [
-            "//  Function: post_shutdown_phase",
             "extern task post_shutdown_phase(uvm_phase phase);\n$0"
         ],
         "description": "UVM post_shutdown_phase stub"
@@ -156,7 +139,6 @@
         "context": "meta.class.systemverilog",
         "prefix": "uvm_extern_phase_extract",
         "body": [
-            "//  Function: extract_phase",
             "extern function void extract_phase(uvm_phase phase);\n$0"
         ],
         "description": "UVM extract_phase stub"
@@ -165,7 +147,6 @@
         "context": "meta.class.systemverilog",
         "prefix": "uvm_extern_phase_check",
         "body": [
-            "//  Function: check_phase",
             "extern function void check_phase(uvm_phase phase);\n$0"
         ],
         "description": "UVM extract_phase stub"
@@ -174,7 +155,6 @@
         "context": "meta.class.systemverilog",
         "prefix": "uvm_extern_phase_report",
         "body": [
-            "//  Function: report_phase",
             "extern function void report_phase(uvm_phase phase);\n$0"
         ],
         "description": "UVM report_phase stub"
@@ -183,13 +163,11 @@
         "context": "meta.class.systemverilog",
         "prefix": "uvm_extern_phase_final",
         "body": [
-            "//  Function: final_phase",
             "extern function void final_phase(uvm_phase phase);\n$0"
         ],
         "description": "UVM report_phase stub"
     },
 
-    // UVM PHASE DEFINITIONS
     "uvm_build_phase": {
         "context": [
             "meta.class.systemverilog",
@@ -507,7 +485,7 @@
             "`uvm_info(${1|get_name(),get_full_name(),\"\"|}, \"${2:<phase>} started, objection raised.\", ${3|UVM_NONE,UVM_LOW,UVM_MEDIUM,UVM_HIGH,UVM_FULL,UVM_DEBUG|})",
             "\n$0\n",
             "phase.drop_objection(this);",
-            "`uvm_info($1, \"$2 finished, objection dropped.\", $3)",
+            "`uvm_info($1, \"$2 finished, objection dropped.\", $3)"
         ],
         "description": "UVM raise_objection & drop_objection template"
     }

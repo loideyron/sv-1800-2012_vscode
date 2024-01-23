@@ -102,7 +102,6 @@
     "description": "Always block for synchronous logics with reset support."
   },
 
-    //  Common System Calls
     "bits" : {
         "prefix": "$bits",
         "body": [

@@ -1,27 +1,25 @@
 {
-  // REPORT MACROS
   "uvm_macro_info": {
     "prefix": "uvm_info",
-    "body": ["`uvm_info(${1|get_name(),get_full_name(),\"\"|}, \"${2:message}\", ${3|UVM_NONE,UVM_LOW,UVM_MEDIUM,UVM_HIGH,UVM_FULL,UVM_DEBUG|})\n$0"],
+    "body": ["`uvm_info(${1|get_name(),get_type_name(),\"\"|}, \"${2:message}\", ${3|UVM_NONE,UVM_LOW,UVM_MEDIUM,UVM_HIGH,UVM_FULL,UVM_DEBUG|})\n$0"],
     "description": "Calls uvm_report_info if VERBOSITY is lower than the configured verbosity of the associated reporter. ID is given as the message tag and message is given as the message text. The file and line are also sent to the uvm_report_info call."
   },
   "uvm_macro_warning": {
     "prefix": "uvm_warning",
-    "body": ["`uvm_warning(${1|get_name(),get_full_name(),\"\"|}, \"${2:message}\")\n$0"],
+    "body": ["`uvm_warning(${1|\"WRN_ID\",get_name(),get_type_name(),\"\"|}, \"${2:message}\")\n$0"],
     "description": "Calls uvm_report_warning with a verbosity of UVM_NONE. ID is given as the message tag and message is given as the message text. The file and line are also sent to the uvm_report_warning call."
   },
   "uvm_macro_error": {
     "prefix": "uvm_error",
-    "body": ["`uvm_error(${1|get_name(),get_full_name(),\"\"|}, \"${2:message}\")\n$0"],
+    "body": ["`uvm_error(${1|\"ERR_ID\",get_name(),get_type_name(),\"\"|}, \"${2:message}\")\n$0"],
     "description": "Calls uvm_report_error with a verbosity of UVM_NONE. ID is given as the message tag and message is given as the message text. The file and line are also sent to the uvm_report_error call."
   },
   "uvm_macro_fatal": {
     "prefix": "uvm_fatal",
-    "body": ["`uvm_fatal(${1|get_name(),get_full_name(),\"\"|}, \"${2:message}\")\n$0"],
+    "body": ["`uvm_fatal(${1|\"FTL_ID\",get_name(),get_type_name(),\"\"|}, \"${2:message}\")\n$0"],
     "description": "Calls uvm_report_fatal with a verbosity of UVM_NONE. ID is given as the message tag and message is given as the message text. The file and line are also sent to the uvm_report_fatal call."
   },
 
-  // FACTORY RELATED MACROS
   "uvm_macro_object_utils": {
     "prefix": "uvm_object_utils",
     "context": "meta.class.systemverilog",
@@ -57,7 +55,6 @@
     "description": "Registers a uvm_component-based class type and lookup string lookup_string with the factory. lookup_string typically is the name of the class in quotes."
   },
 
-  // CONFIG_DB ACCESSORS
   "uvm_config_db_set": {
     "prefix": "uvm_config_db_set",
     "body": ["uvm_config_db#(${1:type})::set(${2:contxt}, ${3:inst_name}, ${4:field_name}, ${5:value});\n$0"],
@@ -88,7 +85,6 @@
     "description": "Wait for a configuration setting to be set for field_name in cntxt and inst_name. The task blocks until a new configuration setting is applied that effects the specified field."
   },
 
-  // TLM MACROS
   "uvm_macro_analysis_imp_decl": {
     "prefix": "uvm_macro_analysis_imp_decl",
     "context": "meta.class.systemverilog",
@@ -96,7 +92,6 @@
     "description": "The `uvm_analysis_imp_decl allows for a component to support input from many places."
   },
 
-  // MISC MACROS
   "uvm_macro_record_field": {
     "prefix": "uvm_macro_record_field",
     "context": "meta.function.systemverilog",
@@ -104,7 +99,6 @@
     "description": "Macro for recording name-value pairs into a transaction recording database."
   },
 
-  //  UVM FACTORY INSTANTIATION MACROS
   "uvm_object_factory_instantiation": {
     "context": "meta.class-body.systemverilog",
     "prefix": "uvm_factory_instantiation_object",
